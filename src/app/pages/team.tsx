@@ -10,6 +10,7 @@ export default function Team() {
       education: "LL.M., Harvard Law School | B.A., LL.B., National Law School of India University",
       experience: "25+ years",
       bar: "Supreme Court of India, Delhi High Court",
+      image: "/partner-1.jpg",
       description:
         "Arvind brings over two decades of experience in corporate law and international transactions. His expertise in India-UAE legal frameworks has been instrumental in establishing the firm's cross-border practice.",
     },
@@ -144,11 +145,19 @@ export default function Team() {
                 <div className="grid grid-cols-1 lg:grid-cols-3">
                   {/* Photo Placeholder */}
                   <div className="lg:col-span-1 bg-gradient-to-br from-[#0a1628] to-[#1a3a5c] flex items-center justify-center p-12">
-                    <div className="w-48 h-48 rounded-full bg-slate-700/30 flex items-center justify-center border-4 border-[#d4af37]">
-                      <span className="text-6xl font-['Playfair_Display'] font-bold text-[#d4af37]">
-                        {member.name.split(" ").slice(-1)[0].charAt(0)}
-                      </span>
-                    </div>
+                    {'image' in member && member.image ? (
+                      <img 
+                        src={member.image as string} 
+                        alt={member.name} 
+                        className="w-48 h-48 rounded-full object-cover border-4 border-[#d4af37]"
+                      />
+                    ) : (
+                      <div className="w-48 h-48 rounded-full bg-slate-700/30 flex items-center justify-center border-4 border-[#d4af37]">
+                        <span className="text-6xl font-['Playfair_Display'] font-bold text-[#d4af37]">
+                          {member.name.split(" ").slice(-1)[0].charAt(0)}
+                        </span>
+                      </div>
+                    )}
                   </div>
 
                   {/* Details */}
@@ -223,11 +232,19 @@ export default function Team() {
                 className="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 border border-slate-200 hover:border-[#d4af37]/30"
               >
                 <div className="flex items-start gap-6">
-                  <div className="w-20 h-20 rounded-full bg-gradient-to-br from-[#0a1628] to-[#1a3a5c] flex items-center justify-center flex-shrink-0 border-2 border-[#d4af37]">
-                    <span className="text-3xl font-['Playfair_Display'] font-bold text-[#d4af37]">
-                      {member.name.split(" ").slice(-1)[0].charAt(0)}
-                    </span>
-                  </div>
+                  {'image' in member && member.image ? (
+                    <img 
+                      src={member.image as string} 
+                      alt={member.name} 
+                      className="w-20 h-20 rounded-full object-cover flex-shrink-0 border-2 border-[#d4af37]"
+                    />
+                  ) : (
+                    <div className="w-20 h-20 rounded-full bg-gradient-to-br from-[#0a1628] to-[#1a3a5c] flex items-center justify-center flex-shrink-0 border-2 border-[#d4af37]">
+                      <span className="text-3xl font-['Playfair_Display'] font-bold text-[#d4af37]">
+                        {member.name.split(" ").slice(-1)[0].charAt(0)}
+                      </span>
+                    </div>
+                  )}
                   <div className="flex-1">
                     <div className="mb-2">
                       <span className="inline-block px-2 py-1 bg-[#d4af37]/10 text-[#d4af37] text-xs font-medium rounded">

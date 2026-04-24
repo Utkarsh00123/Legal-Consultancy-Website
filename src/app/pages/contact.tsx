@@ -12,22 +12,43 @@ export default function Contact() {
   });
 
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [errorMsg, setErrorMsg] = useState("");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // In a real application, this would send data to a server
-    setSubmitted(true);
-    setTimeout(() => {
-      setSubmitted(false);
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        location: "",
-        practiceArea: "",
-        message: "",
+    setIsSubmitting(true);
+    setErrorMsg("");
+
+    try {
+      const response = await fetch("http://localhost:3000/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
       });
-    }, 3000);
+
+      const data = await response.json();
+
+      if (data.success) {
+        setSubmitted(true);
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          location: "",
+          practiceArea: "",
+          message: "",
+        });
+        setTimeout(() => setSubmitted(false), 5000);
+      } else {
+        setErrorMsg(data.error || "Failed to send message. Please try again.");
+      }
+    } catch (err) {
+      console.error(err);
+      setErrorMsg("Failed to connect to the server. Please try again later.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (
@@ -98,8 +119,14 @@ export default function Contact() {
 
               {submitted && (
                 <div className="bg-green-50 border border-green-200 text-green-800 p-4 rounded-lg mb-6">
-                  <p className="font-medium">Thank you for reaching out!</p>
+                  <p className="font-medium">Email Sent Successfully!</p>
                   <p className="text-sm">We'll be in touch with you shortly.</p>
+                </div>
+              )}
+              {errorMsg && (
+                <div className="bg-red-50 border border-red-200 text-red-800 p-4 rounded-lg mb-6">
+                  <p className="font-medium">Error</p>
+                  <p className="text-sm">{errorMsg}</p>
                 </div>
               )}
 
@@ -156,25 +183,17 @@ export default function Contact() {
 
                   <div>
                     <label htmlFor="location" className="block text-sm font-medium text-[#0a1628] mb-2">
-                      Preferred Office Location
+                      Your Location
                     </label>
-                    <select
+                    <input
+                      type="text"
                       id="location"
                       name="location"
                       value={formData.location}
                       onChange={handleChange}
                       className="w-full px-4 py-3 border border-slate-300 rounded focus:ring-2 focus:ring-[#d4af37] focus:border-transparent transition-all"
-                    >
-                      <option value="">Select location</option>
-                      <option value="delhi">New Delhi</option>
-                      <option value="mumbai">Mumbai</option>
-                      <option value="bangalore">Bangalore</option>
-                      <option value="chennai">Chennai</option>
-                      <option value="gurgaon">Gurgaon</option>
-                      <option value="hyderabad">Hyderabad</option>
-                      <option value="chandigarh">Chandigarh</option>
-                      <option value="dubai">Dubai</option>
-                    </select>
+                      placeholder="Enter your address or city"
+                    />
                   </div>
                 </div>
 
@@ -217,10 +236,11 @@ export default function Contact() {
 
                 <button
                   type="submit"
-                  className="w-full md:w-auto px-10 py-4 bg-[#d4af37] text-[#0a1628] rounded hover:bg-[#b8941f] transition-all duration-300 font-bold inline-flex items-center justify-center gap-2 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                  disabled={isSubmitting}
+                  className="w-full md:w-auto px-10 py-4 bg-[#d4af37] text-[#0a1628] rounded hover:bg-[#b8941f] transition-all duration-300 font-bold inline-flex items-center justify-center gap-2 shadow-lg hover:shadow-xl transform hover:-translate-y-1 disabled:opacity-70 disabled:hover:translate-y-0 disabled:cursor-not-allowed"
                 >
-                  Send Message
-                  <Send className="w-5 h-5" />
+                  {isSubmitting ? "Sending..." : "Send Message"}
+                  {!isSubmitting && <Send className="w-5 h-5" />}
                 </button>
               </form>
             </div>
@@ -268,16 +288,6 @@ export default function Contact() {
                 </div>
               </div>
 
-              <div className="bg-slate-50 p-8 rounded-lg border border-slate-200">
-                <h3 className="font-['Playfair_Display'] text-xl font-bold text-[#0a1628] mb-4">
-                  Emergency Consultations
-                </h3>
-                <p className="text-slate-600 text-sm mb-4 leading-relaxed">
-                  For urgent legal matters requiring immediate attention, please call:
-                </p>
-                <p className="text-2xl font-bold text-[#d4af37] mb-1">+91 98765 43210</p>
-                <p className="text-xs text-slate-500">Available 24/7 for emergencies</p>
-              </div>
             </div>
           </div>
         </div>

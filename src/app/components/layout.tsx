@@ -112,17 +112,7 @@ export default function Layout() {
                   isActive("/team") ? "w-full" : ""
                 }`}></span>
               </Link>
-              <Link
-                to="/insights"
-                className={`text-[15px] hover:text-[#d4af37] transition-colors relative group ${
-                  isActive("/insights") ? "text-[#d4af37]" : "text-[#0a1628]"
-                }`}
-              >
-                Insights
-                <span className={`absolute -bottom-1 left-0 w-0 h-0.5 bg-[#d4af37] transition-all group-hover:w-full ${
-                  isActive("/insights") ? "w-full" : ""
-                }`}></span>
-              </Link>
+
               <Link
                 to="/contact"
                 className="px-6 py-2.5 bg-[#d4af37] text-[#0a1628] rounded hover:bg-[#b8941f] transition-all duration-300 font-medium shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
@@ -179,15 +169,7 @@ export default function Layout() {
               >
                 Our Team
               </Link>
-              <Link
-                to="/insights"
-                className={`block py-2 text-[15px] hover:text-[#d4af37] transition-colors ${
-                  isActive("/insights") ? "text-[#d4af37]" : "text-[#0a1628]"
-                }`}
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Insights
-              </Link>
+
               <Link
                 to="/contact"
                 className="block py-3 px-6 bg-[#d4af37] text-[#0a1628] rounded hover:bg-[#b8941f] transition-colors font-medium text-center mt-4"
@@ -254,11 +236,7 @@ export default function Layout() {
                     Our Team
                   </Link>
                 </li>
-                <li>
-                  <Link to="/insights" className="text-slate-300 hover:text-[#d4af37] transition-colors">
-                    Insights
-                  </Link>
-                </li>
+
                 <li>
                   <Link to="/contact" className="text-slate-300 hover:text-[#d4af37] transition-colors">
                     Contact
