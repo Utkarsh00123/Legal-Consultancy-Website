@@ -1,13 +1,16 @@
 import express from 'express';
 import cors from 'cors';
 import { Resend } from 'resend';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const app = express();
 app.use(cors());
 app.use(express.json());
 
 // Initialize Resend with the provided API key
-const resend = new Resend('re_Uf4CG9zP_4kGju5xivpCVBLHE3KXrjqmc');
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 app.post('/api/contact', async (req, res) => {
   const { name, email, phone, location, practiceArea, message } = req.body;
