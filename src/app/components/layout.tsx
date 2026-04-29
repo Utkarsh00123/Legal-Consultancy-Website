@@ -35,7 +35,7 @@ export default function Layout() {
               </a>
             </div>
             <div className="text-slate-300">
-              Serving clients in India & UAE
+              Serving clients in India
             </div>
           </div>
         </div>
@@ -212,7 +212,7 @@ export default function Layout() {
                 Building Trust. Delivering Justice.
               </p>
               <p className="text-slate-400 text-sm leading-relaxed">
-                A full-service law firm bridging legal excellence across India and the UAE.
+                A full-service law firm delivering legal excellence.
               </p>
             </div>
 
@@ -267,14 +267,10 @@ export default function Layout() {
               <h3 className="font-['Playfair_Display'] text-lg font-semibold mb-6 text-[#d4af37]">Contact Us</h3>
               <ul className="space-y-4 text-sm text-slate-300">
                 <li>
-                  <div className="font-medium text-white mb-1">India Office</div>
-                  <div>New Delhi, Mumbai, Bangalore</div>
-                  <div>Chennai, Gurgaon, Hyderabad</div>
-                  <div>Chandigarh</div>
-                </li>
-                <li>
-                  <div className="font-medium text-white mb-1">UAE Office</div>
-                  <div>Dubai</div>
+                  <div className="font-medium text-white mb-1">Our Office</div>
+                  <div>213, KAILASH BUILDING</div>
+                  <div>26, K G MARG</div>
+                  <div>NEW DELHI, DELHI, India 110001</div>
                 </li>
                 <li className="pt-2">
                   <div>Landline: 011-45727781</div>

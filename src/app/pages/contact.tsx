@@ -60,26 +60,6 @@ export default function Contact() {
     });
   };
 
-  const offices = [
-    {
-      country: "India",
-      locations: [
-        { city: "New Delhi", address: "213, KAILASH BUILDING, 26, K G MARG, NEW DELHI, DELHI, Delhi, India 110001", phone: "+91 11 1234 5678" },
-        { city: "Mumbai", address: "Nariman Point, Mumbai - 400021", phone: "+91 22 1234 5678" },
-        { city: "Bangalore", address: "M.G. Road, Bangalore - 560001", phone: "+91 80 1234 5678" },
-        { city: "Chennai", address: "Anna Salai, Chennai - 600002", phone: "+91 44 1234 5678" },
-        { city: "Gurgaon", address: "Cyber City, Gurgaon - 122002", phone: "+91 124 123 4567" },
-        { city: "Hyderabad", address: "Banjara Hills, Hyderabad - 500034", phone: "+91 40 1234 5678" },
-        { city: "Chandigarh", address: "Sector 17, Chandigarh - 160017", phone: "+91 172 123 4567" },
-      ],
-    },
-    {
-      country: "UAE",
-      locations: [
-        { city: "Dubai", address: "Business Bay, Dubai - UAE", phone: "+971 4 123 4567" },
-      ],
-    },
-  ];
 
   return (
     <div>
@@ -259,8 +239,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <h4 className="font-semibold mb-2">Landline</h4>
-                      <p className="text-slate-300 text-sm">India: 011-45727781</p>
-                      <p className="text-slate-300 text-sm">UAE: +971 4 123 4567</p>
+                      <p className="text-slate-300 text-sm">011-45727781</p>
                     </div>
                   </div>
 
@@ -293,59 +272,6 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* Office Locations */}
-      <section className="py-20 bg-slate-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="font-['Playfair_Display'] text-4xl md:text-5xl font-bold text-[#0a1628] mb-4">
-              Our Office Locations
-            </h2>
-            <div className="w-24 h-1 bg-[#d4af37] mx-auto mb-6"></div>
-            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              Conveniently located across India and the UAE to serve you better
-            </p>
-          </div>
-
-          {offices.map((region, regionIndex) => (
-            <div key={regionIndex} className="mb-12 last:mb-0">
-              <div className="flex items-center gap-3 mb-8">
-                <Building className="w-8 h-8 text-[#d4af37]" />
-                <h3 className="font-['Playfair_Display'] text-3xl font-bold text-[#0a1628]">
-                  {region.country}
-                </h3>
-              </div>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {region.locations.map((location, locationIndex) => (
-                  <div
-                    key={locationIndex}
-                    className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 border border-slate-200 hover:border-[#d4af37]/30"
-                  >
-                    <div className="flex items-start gap-3 mb-4">
-                      <MapPin className="w-5 h-5 text-[#d4af37] flex-shrink-0 mt-1" />
-                      <div>
-                        <h4 className="font-semibold text-[#0a1628] text-lg mb-2">
-                          {location.city}
-                        </h4>
-                        <p className="text-slate-600 text-sm mb-3">{location.address}</p>
-                        <div className="flex items-center gap-2">
-                          <Phone className="w-4 h-4 text-[#d4af37]" />
-                          <a
-                            href={`tel:${location.phone.replace(/\s/g, '')}`}
-                            className="text-sm text-[#0a1628] hover:text-[#d4af37] transition-colors"
-                          >
-                            {location.phone}
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
 
       {/* Map Placeholder */}
       <section className="py-20 bg-white">
@@ -354,7 +280,7 @@ export default function Contact() {
             <div className="text-center text-slate-600">
               <MapPin className="w-16 h-16 mx-auto mb-4 text-[#d4af37]" />
               <p className="text-lg font-medium">Interactive Map</p>
-              <p className="text-sm">Locations across India and UAE</p>
+              <p className="text-sm">213, KAILASH BUILDING, 26, K G MARG, NEW DELHI, DELHI, Delhi, India 110001</p>
             </div>
           </div>
         </div>

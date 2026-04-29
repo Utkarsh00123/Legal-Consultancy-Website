@@ -87,10 +87,6 @@ export default function Home() {
     },
   ];
 
-  const locations = [
-    { country: "India", cities: ["New Delhi", "Mumbai", "Bangalore", "Chennai", "Gurgaon", "Hyderabad", "Chandigarh"] },
-    { country: "UAE", cities: ["Dubai"] },
-  ];
 
   const testimonials = [
     {
@@ -131,7 +127,7 @@ export default function Home() {
             </div>
             
             <h1 className="font-['Playfair_Display'] text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 leading-tight">
-              A Firm That Bridges Legal Excellence Across India and the UAE
+              A Firm That Delivers Legal Excellence
             </h1>
             
             <p className="text-xl md:text-2xl text-slate-300 mb-10 leading-relaxed">
@@ -169,8 +165,8 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <p className="text-lg md:text-xl text-slate-700 leading-relaxed">
-              At <span className="font-semibold text-[#0a1628]">AP JURIS CHAMBERS</span>, we serve clients across{" "}
-              <span className="font-semibold text-[#0a1628]">New Delhi, Mumbai, Bangalore, Chennai, Gurgaon, Hyderabad, Chandigarh, and Dubai</span>. 
+              At <span className="font-semibold text-[#0a1628]">AP JURIS CHAMBERS</span>, we serve clients from our office in{" "}
+              <span className="font-semibold text-[#0a1628]">New Delhi</span>. 
               We are built on <span className="font-semibold text-[#d4af37]">trust, integrity, and personalized service</span>, making legal solutions simple and accessible.
             </p>
           </div>
@@ -261,48 +257,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Geographic Reach Section */}
-      <section className="py-20 bg-gradient-to-br from-[#0a1628] to-[#1a3a5c] text-white relative overflow-hidden">
-        <div className="absolute inset-0 opacity-5">
-          <div className="absolute inset-0" style={{
-            backgroundImage: "radial-gradient(circle at 2px 2px, white 1px, transparent 0)",
-            backgroundSize: "40px 40px"
-          }}></div>
-        </div>
-        
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="font-['Playfair_Display'] text-4xl md:text-5xl font-bold mb-4">
-              Our Geographic Reach
-            </h2>
-            <div className="w-24 h-1 bg-[#d4af37] mx-auto mb-6"></div>
-            <p className="text-xl text-slate-300 max-w-3xl mx-auto">
-              Serving clients across major business hubs in India and the UAE
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
-            {locations.map((location, index) => (
-              <div key={index} className="text-center">
-                <div className="inline-flex items-center justify-center w-20 h-20 bg-[#d4af37]/10 rounded-full mb-6 border-2 border-[#d4af37]/30">
-                  <MapPin className="w-10 h-10 text-[#d4af37]" />
-                </div>
-                <h3 className="font-['Playfair_Display'] text-3xl font-bold mb-6">{location.country}</h3>
-                <div className="flex flex-wrap justify-center gap-3">
-                  {location.cities.map((city, cityIndex) => (
-                    <span
-                      key={cityIndex}
-                      className="px-4 py-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-sm"
-                    >
-                      {city}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Values Section */}
       <section className="py-20 bg-white">
@@ -390,7 +344,7 @@ export default function Home() {
             Ready to Get Started?
           </h2>
           <p className="text-xl text-slate-300 mb-10 leading-relaxed">
-            Schedule a consultation today and discover how we can help protect your interests and achieve your goals.
+            Experience the difference of working with a law firm that truly understands complex legal challenges can help protect your interests and achieve your goals.
           </p>
           <Link
             to="/contact"

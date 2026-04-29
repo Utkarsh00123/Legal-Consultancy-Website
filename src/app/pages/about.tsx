@@ -43,7 +43,7 @@ export default function About() {
               About AP JURIS CHAMBERS
             </h1>
             <p className="text-xl text-slate-300 leading-relaxed">
-              Building bridges of legal excellence between India and the UAE since our inception
+              Providing exceptional legal excellence from our New Delhi office since our inception
             </p>
           </div>
         </div>
@@ -83,13 +83,13 @@ export default function About() {
               <div className="w-24 h-1 bg-[#d4af37] mb-6"></div>
               <div className="space-y-4 text-slate-700 leading-relaxed">
                 <p>
-                  <span className="font-semibold text-[#0a1628]">AP JURIS CHAMBERS</span> is a full-service law firm that stands at the intersection of legal excellence and practical business solutions. Our firm is uniquely positioned to serve clients across India and the UAE, offering seamless cross-border legal expertise.
+                  <span className="font-semibold text-[#0a1628]">AP JURIS CHAMBERS</span> is a full-service law firm that stands at the intersection of legal excellence and practical business solutions. Our firm is uniquely positioned to serve clients across India, offering seamless legal expertise.
                 </p>
                 <p>
                   Founded on the principles of <span className="font-semibold text-[#d4af37]">trust, integrity, and personalized service</span>, we have grown into a respected name in the legal community. Our team of experienced attorneys brings together diverse expertise across multiple practice areas, ensuring comprehensive legal support for our clients.
                 </p>
                 <p>
-                  We serve clients across <span className="font-semibold">New Delhi, Mumbai, Bangalore, Chennai, Gurgaon, Hyderabad, Chandigarh, and Dubai</span>, providing localized knowledge combined with international perspective. Whether you're a multinational corporation, a growing startup, or an individual seeking legal counsel, we are committed to making legal solutions simple and accessible.
+                  We serve clients from our <span className="font-semibold">New Delhi</span> office, providing localized knowledge combined with international perspective. Whether you're a multinational corporation, a growing startup, or an individual seeking legal counsel, we are committed to making legal solutions simple and accessible.
                 </p>
                 <p>
                   Our approach is client-centric, business-oriented, and results-driven. We don't just provide legal advice; we partner with you to achieve your objectives while protecting your interests every step of the way.
@@ -129,89 +129,13 @@ export default function About() {
               </div>
               <h3 className="font-['Playfair_Display'] text-3xl font-bold mb-4">Our Vision</h3>
               <p className="text-[#0a1628]/90 leading-relaxed">
-                To be the leading cross-border law firm connecting India and the UAE, recognized for our exceptional client service, innovative legal strategies, and unwavering ethical standards. We envision a future where businesses and individuals can navigate legal complexities across jurisdictions with confidence, supported by our expertise and dedication.
+                To be the leading law firm recognized for our exceptional client service, innovative legal strategies, and unwavering ethical standards. We envision a future where businesses and individuals can navigate legal complexities with confidence, supported by our expertise and dedication.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Cross-Border Expertise Focus */}
-      <section className="py-20 bg-slate-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="font-['Playfair_Display'] text-4xl md:text-5xl font-bold text-[#0a1628] mb-4">
-              Cross-Border Excellence
-            </h2>
-            <div className="w-24 h-1 bg-[#d4af37] mx-auto mb-6"></div>
-            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              Our unique strength lies in seamlessly navigating legal landscapes across India and the UAE
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-12">
-            <div className="rounded-lg overflow-hidden shadow-2xl">
-              <ImageWithFallback
-                src="https://images.unsplash.com/photo-1766405532163-e38c3033f862?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmRpYSUyMGdhdGUlMjBkZWxoaSUyMGxhbmRtYXJrfGVufDF8fHx8MTc3NDUyNDc1OXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                alt="India landmark"
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div>
-              <h3 className="font-['Playfair_Display'] text-3xl font-bold text-[#0a1628] mb-4">
-                India Expertise
-              </h3>
-              <p className="text-slate-700 leading-relaxed mb-6">
-                With offices across major Indian cities including New Delhi, Mumbai, Bangalore, Chennai, Gurgaon, Hyderabad, and Chandigarh, we offer comprehensive legal services grounded in deep understanding of Indian law, regulatory frameworks, and business practices.
-              </p>
-              <ul className="space-y-3">
-                {[
-                  "Multi-jurisdictional presence across India",
-                  "Expert knowledge of Indian legal system",
-                  "Strong relationships with regulatory authorities",
-                  "Understanding of regional business cultures"
-                ].map((item, index) => (
-                  <li key={index} className="flex items-start gap-3">
-                    <ChevronRight className="w-5 h-5 text-[#d4af37] flex-shrink-0 mt-0.5" />
-                    <span className="text-slate-700">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="order-2 lg:order-1">
-              <h3 className="font-['Playfair_Display'] text-3xl font-bold text-[#0a1628] mb-4">
-                UAE Expertise
-              </h3>
-              <p className="text-slate-700 leading-relaxed mb-6">
-                Our Dubai office provides strategic legal support for businesses operating in the UAE, leveraging our understanding of both common law and civil law systems to deliver exceptional cross-border advisory services.
-              </p>
-              <ul className="space-y-3">
-                {[
-                  "Deep knowledge of UAE legal framework",
-                  "Experience with free zone regulations",
-                  "Understanding of Sharia law principles",
-                  "Expertise in UAE business practices"
-                ].map((item, index) => (
-                  <li key={index} className="flex items-start gap-3">
-                    <ChevronRight className="w-5 h-5 text-[#d4af37] flex-shrink-0 mt-0.5" />
-                    <span className="text-slate-700">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="order-1 lg:order-2 rounded-lg overflow-hidden shadow-2xl">
-              <ImageWithFallback
-                src="https://images.unsplash.com/photo-1759214483344-ef154537f082?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBjb3Jwb3JhdGUlMjBza3lsaW5lJTIwZHViYWl8ZW58MXx8fHwxNzc0NTQxNTI3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                alt="Dubai skyline"
-                className="w-full h-full object-cover"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Why Choose Us Section */}
       <section className="py-20 bg-white">
@@ -261,7 +185,7 @@ export default function About() {
             Partner With Us
           </h2>
           <p className="text-xl text-slate-300 mb-10 leading-relaxed">
-            Experience the difference of working with a law firm that truly understands cross-border complexities
+            Experience the difference of working with a law firm that truly understands complex legal challenges
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
