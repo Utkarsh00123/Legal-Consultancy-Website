@@ -270,7 +270,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <h4 className="font-semibold mb-2">Email</h4>
-                      <p className="text-slate-300 text-sm break-all">info@apsolicitorsandconsultants.com</p>
+                      <p className="text-slate-300 text-sm break-all">apjurischambers@gmail.com</p>
                     </div>
                   </div>
 

@@ -33,10 +33,6 @@ export default function Layout() {
                 <Phone className="w-4 h-4" />
                 <span>+91 123 456 7890</span>
               </a>
-              <a href="mailto:info@apsolicitorsandconsultants.com" className="flex items-center gap-2 hover:text-[#d4af37] transition-colors">
-                <Mail className="w-4 h-4" />
-                <span>info@apsolicitorsandconsultants.com</span>
-              </a>
             </div>
             <div className="text-slate-300">
               Serving clients in India & UAE
@@ -282,7 +278,7 @@ export default function Layout() {
                 </li>
                 <li className="pt-2">
                   <div>Phone: +91 123 456 7890</div>
-                  <div>Email: info@apsolicitorsandconsultants.com</div>
+                  <div>Email: apjurischambers@gmail.com</div>
                 </li>
               </ul>
             </div>
