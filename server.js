@@ -16,11 +16,11 @@ app.post('/api/contact', async (req, res) => {
   const { name, email, phone, location, practiceArea, message } = req.body;
 
   try {
-    const data = await resend.emails.send({
-      from: `${name} <onboarding@resend.dev>`,
+    const { data, error } = await resend.emails.send({
+      from: `Legal Consultation <onboarding@resend.dev>`,
       to: 'apjurischambers@gmail.com',
       reply_to: email,
-      subject: `New Legal Consultation Request from ${name}`,
+      subject: `New Legal Consultation Request from ${name || 'a client'}`,
       html: `
         <h2>New Consultation Request</h2>
         <p><strong>Name:</strong> ${name}</p>
@@ -33,6 +33,11 @@ app.post('/api/contact', async (req, res) => {
         <p>${message}</p>
       `,
     });
+
+    if (error) {
+      console.error('Resend API Error:', error);
+      return res.status(error.statusCode || 400).json({ success: false, error: error.message });
+    }
 
     res.status(200).json({ success: true, data });
   } catch (error) {
