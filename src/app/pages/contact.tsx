@@ -64,7 +64,7 @@ export default function Contact() {
     {
       country: "India",
       locations: [
-        { city: "New Delhi", address: "Connaught Place, New Delhi - 110001", phone: "+91 11 1234 5678" },
+        { city: "New Delhi", address: "213, KAILASH BUILDING, 26, K G MARG, NEW DELHI, DELHI, Delhi, India 110001", phone: "+91 11 1234 5678" },
         { city: "Mumbai", address: "Nariman Point, Mumbai - 400021", phone: "+91 22 1234 5678" },
         { city: "Bangalore", address: "M.G. Road, Bangalore - 560001", phone: "+91 80 1234 5678" },
         { city: "Chennai", address: "Anna Salai, Chennai - 600002", phone: "+91 44 1234 5678" },
