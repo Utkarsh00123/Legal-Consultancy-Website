@@ -27,7 +27,8 @@ export default async function handler(req, res) {
   try {
     const { data, error } = await resend.emails.send({
       from: `Legal Consultation <onboarding@resend.dev>`,
-      to: 'apjurischambers@gmail.com',
+      // While in Resend Sandbox mode, you can only send emails to your verified account email
+      to: 'ayushichauhan1217@gmail.com', // Changed from apjurischambers@gmail.com
       reply_to: email,
       subject: `New Legal Consultation Request from ${name || 'a client'}`,
       html: `
