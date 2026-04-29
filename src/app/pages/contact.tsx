@@ -21,7 +21,7 @@ export default function Contact() {
     setErrorMsg("");
 
     try {
-      const response = await fetch(`http://${window.location.hostname}:3000/api/contact`, {
+      const response = await fetch(`/api/contact`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
