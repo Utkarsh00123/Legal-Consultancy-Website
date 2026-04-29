@@ -21,28 +21,19 @@ export default function Contact() {
     setErrorMsg("");
 
     try {
-      const response = await fetch(`/api/contact`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
+      // Simulate network request for UI purposes, backend has been removed
+      await new Promise((resolve) => setTimeout(resolve, 1000));
+      
+      setSubmitted(true);
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        location: "",
+        practiceArea: "",
+        message: "",
       });
-
-      const data = await response.json();
-
-      if (data.success) {
-        setSubmitted(true);
-        setFormData({
-          name: "",
-          email: "",
-          phone: "",
-          location: "",
-          practiceArea: "",
-          message: "",
-        });
-        setTimeout(() => setSubmitted(false), 5000);
-      } else {
-        setErrorMsg(data.error || "Failed to send message. Please try again.");
-      }
+      setTimeout(() => setSubmitted(false), 5000);
     } catch (err) {
       console.error(err);
       setErrorMsg("Failed to connect to the server. Please try again later.");
