@@ -58,7 +58,7 @@ export default function Layout() {
               <Scale className="w-10 h-10 text-[#d4af37] transform group-hover:rotate-12 transition-transform duration-300" />
               <div>
                 <div className="font-['Playfair_Display'] font-bold text-xl text-[#0a1628] leading-tight">
-                  AP Solicitors
+                  AP JURIS CHAMBERS
                 </div>
                 <div className="text-[11px] text-slate-600 tracking-wide uppercase">
                   Legal Consultants
@@ -197,7 +197,7 @@ export default function Layout() {
                 <Scale className="w-10 h-10 text-[#d4af37]" />
                 <div>
                   <div className="font-['Playfair_Display'] font-bold text-xl leading-tight">
-                    AP Solicitors
+                    AP JURIS CHAMBERS
                   </div>
                   <div className="text-[11px] text-slate-300 tracking-wide uppercase">
                     Legal Consultants
@@ -282,7 +282,7 @@ export default function Layout() {
 
           <div className="border-t border-slate-700 mt-12 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-400">
-              <p>&copy; 2026 AP Solicitors and Legal Consultants. All rights reserved.</p>
+              <p>&copy; 2026 AP JURIS CHAMBERS. All rights reserved.</p>
               <div className="flex gap-6">
                 <a href="#" className="hover:text-[#d4af37] transition-colors">Privacy Policy</a>
                 <a href="#" className="hover:text-[#d4af37] transition-colors">Terms of Service</a>

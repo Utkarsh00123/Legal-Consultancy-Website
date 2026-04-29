@@ -40,7 +40,7 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <h1 className="font-['Playfair_Display'] text-5xl md:text-6xl font-bold mb-6">
-              About AP Solicitors
+              About AP JURIS CHAMBERS
             </h1>
             <p className="text-xl text-slate-300 leading-relaxed">
               Building bridges of legal excellence between India and the UAE since our inception
@@ -83,7 +83,7 @@ export default function About() {
               <div className="w-24 h-1 bg-[#d4af37] mb-6"></div>
               <div className="space-y-4 text-slate-700 leading-relaxed">
                 <p>
-                  <span className="font-semibold text-[#0a1628]">AP Solicitors and Legal Consultants</span> is a full-service law firm that stands at the intersection of legal excellence and practical business solutions. Our firm is uniquely positioned to serve clients across India and the UAE, offering seamless cross-border legal expertise.
+                  <span className="font-semibold text-[#0a1628]">AP JURIS CHAMBERS</span> is a full-service law firm that stands at the intersection of legal excellence and practical business solutions. Our firm is uniquely positioned to serve clients across India and the UAE, offering seamless cross-border legal expertise.
                 </p>
                 <p>
                   Founded on the principles of <span className="font-semibold text-[#d4af37]">trust, integrity, and personalized service</span>, we have grown into a respected name in the legal community. Our team of experienced attorneys brings together diverse expertise across multiple practice areas, ensuring comprehensive legal support for our clients.
@@ -218,7 +218,7 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="font-['Playfair_Display'] text-4xl md:text-5xl font-bold text-[#0a1628] mb-4">
-              Why Choose AP Solicitors
+              Why Choose AP JURIS CHAMBERS
             </h2>
             <div className="w-24 h-1 bg-[#d4af37] mx-auto mb-6"></div>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">

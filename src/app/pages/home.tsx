@@ -94,7 +94,7 @@ export default function Home() {
 
   const testimonials = [
     {
-      quote: "AP Solicitors provided exceptional cross-border legal support for our expansion into the UAE. Their expertise and professionalism were unmatched.",
+      quote: "AP JURIS CHAMBERS provided exceptional cross-border legal support for our expansion into the UAE. Their expertise and professionalism were unmatched.",
       author: "Rajesh Sharma",
       role: "CEO, TechVenture India",
     },
@@ -169,7 +169,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <p className="text-lg md:text-xl text-slate-700 leading-relaxed">
-              At <span className="font-semibold text-[#0a1628]">A.P. Solicitors and Legal Consultants</span>, we serve clients across{" "}
+              At <span className="font-semibold text-[#0a1628]">AP JURIS CHAMBERS</span>, we serve clients across{" "}
               <span className="font-semibold text-[#0a1628]">New Delhi, Mumbai, Bangalore, Chennai, Gurgaon, Hyderabad, Chandigarh, and Dubai</span>. 
               We are built on <span className="font-semibold text-[#d4af37]">trust, integrity, and personalized service</span>, making legal solutions simple and accessible.
             </p>
