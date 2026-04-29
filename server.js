@@ -17,7 +17,7 @@ app.post('/api/contact', async (req, res) => {
 
   try {
     const { data, error } = await resend.emails.send({
-      from: `Legal Consultation <onboarding@resend.dev>`,
+      from: `Legal Consultation <contact@apjurischambers.in>`,
       to: 'apjurischambers@gmail.com',
       reply_to: email,
       subject: `New Legal Consultation Request from ${name || 'a client'}`,
