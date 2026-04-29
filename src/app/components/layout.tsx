@@ -55,7 +55,11 @@ export default function Layout() {
           <div className="flex justify-between items-center h-20">
             {/* Logo */}
             <Link to="/" className="flex items-center gap-3 group">
-              <Scale className="w-10 h-10 text-[#d4af37] transform group-hover:rotate-12 transition-transform duration-300" />
+              <img 
+                src="/logo.png" 
+                alt="AP JURIS CHAMBERS Logo" 
+                className="h-16 w-auto object-contain mix-blend-multiply transform group-hover:scale-105 transition-transform duration-300" 
+              />
               <div>
                 <div className="font-['Playfair_Display'] font-bold text-xl text-[#0a1628] leading-tight">
                   AP JURIS CHAMBERS
@@ -194,7 +198,11 @@ export default function Layout() {
             {/* About */}
             <div className="lg:col-span-1">
               <div className="flex items-center gap-3 mb-6">
-                <Scale className="w-10 h-10 text-[#d4af37]" />
+                <img 
+                  src="/logo.png" 
+                  alt="AP JURIS CHAMBERS Logo" 
+                  className="h-16 w-auto object-contain bg-white rounded-lg p-1" 
+                />
                 <div>
                   <div className="font-['Playfair_Display'] font-bold text-xl leading-tight">
                     AP JURIS CHAMBERS
