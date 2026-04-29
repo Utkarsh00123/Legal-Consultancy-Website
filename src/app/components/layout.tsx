@@ -29,9 +29,9 @@ export default function Layout() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center text-sm">
             <div className="flex items-center gap-6">
-              <a href="tel:+911234567890" className="flex items-center gap-2 hover:text-[#d4af37] transition-colors">
+              <a href="tel:01145727781" className="flex items-center gap-2 hover:text-[#d4af37] transition-colors">
                 <Phone className="w-4 h-4" />
-                <span>+91 123 456 7890</span>
+                <span>011-45727781</span>
               </a>
             </div>
             <div className="text-slate-300">
@@ -277,7 +277,7 @@ export default function Layout() {
                   <div>Dubai</div>
                 </li>
                 <li className="pt-2">
-                  <div>Phone: +91 123 456 7890</div>
+                  <div>Landline: 011-45727781</div>
                   <div>Email: apjurischambers@gmail.com</div>
                 </li>
               </ul>

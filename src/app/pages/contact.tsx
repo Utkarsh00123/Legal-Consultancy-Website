@@ -168,7 +168,7 @@ export default function Contact() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label htmlFor="phone" className="block text-sm font-medium text-[#0a1628] mb-2">
-                      Phone Number
+                      Landline Number
                     </label>
                     <input
                       type="tel"
@@ -177,7 +177,7 @@ export default function Contact() {
                       value={formData.phone}
                       onChange={handleChange}
                       className="w-full px-4 py-3 border border-slate-300 rounded focus:ring-2 focus:ring-[#d4af37] focus:border-transparent transition-all"
-                      placeholder="+91 123 456 7890"
+                      placeholder="011-45727781"
                     />
                   </div>
 
@@ -258,8 +258,8 @@ export default function Contact() {
                       <Phone className="w-6 h-6 text-[#0a1628]" />
                     </div>
                     <div>
-                      <h4 className="font-semibold mb-2">Phone</h4>
-                      <p className="text-slate-300 text-sm">India: +91 123 456 7890</p>
+                      <h4 className="font-semibold mb-2">Landline</h4>
+                      <p className="text-slate-300 text-sm">India: 011-45727781</p>
                       <p className="text-slate-300 text-sm">UAE: +971 4 123 4567</p>
                     </div>
                   </div>
