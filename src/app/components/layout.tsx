@@ -341,9 +341,7 @@ export default function Layout() {
 
               {/* Mobile Regional Switcher */}
               <div className="border-t border-slate-200 pt-4 mt-4">
-                <span className="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-3">
-                  🌎 Regional Presence & Hot Preview
-                </span>
+
                 <div className="space-y-3">
                   {regions.map((reg) => {
                     const isOpen = mobileActiveRegion === reg.name;
@@ -493,7 +491,7 @@ export default function Layout() {
               <h3 className="font-['Playfair_Display'] text-lg font-semibold mb-6 text-[#d4af37]">Our Office</h3>
               <ul className="space-y-4 text-sm text-slate-300">
                 <li>
-                  <div className="font-medium text-white mb-0.5">🇮🇳 New Delhi (HQ)</div>
+                  <div className="font-medium text-white mb-0.5">🇮🇳 New Delhi</div>
                   <div className="text-[12px] text-slate-400">213, Kailash Bldg, 26, K G Marg, New Delhi 110001</div>
                   <div className="text-[12px] text-slate-400">Ph: 011-45727781</div>
                 </li>
