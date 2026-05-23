@@ -165,9 +165,9 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <p className="text-lg md:text-xl text-slate-700 leading-relaxed">
-              At <span className="font-semibold text-[#0a1628]">AP JURIS CHAMBERS</span>, we serve clients from our office in{" "}
-              <span className="font-semibold text-[#0a1628]">New Delhi</span>. 
-              We are built on <span className="font-semibold text-[#d4af37]">trust, integrity, and personalized service</span>, making legal solutions simple and accessible.
+              At <span className="font-semibold text-[#0a1628]">AP JURIS CHAMBERS</span>, we serve clients across our offices in{" "}
+              <span className="font-semibold text-[#0a1628]">New Delhi, Dubai, and Abu Dhabi</span>. 
+              We are built on <span className="font-semibold text-[#d4af37]">trust, integrity, and personalized service</span>, making cross-border and local legal solutions simple and accessible.
             </p>
           </div>
         </div>

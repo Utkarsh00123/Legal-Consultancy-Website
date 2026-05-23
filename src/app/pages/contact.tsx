@@ -228,8 +228,8 @@ export default function Contact() {
             {/* Quick Contact Info */}
             <div className="lg:col-span-1">
               <div className="bg-gradient-to-br from-[#0a1628] to-[#1a3a5c] text-white p-8 rounded-lg shadow-xl mb-8">
-                <h3 className="font-['Playfair_Display'] text-2xl font-bold mb-6">
-                  Contact Information
+                <h3 className="font-['Playfair_Display'] text-2xl font-bold mb-4">
+                  Our Office
                 </h3>
                 
                 <div className="space-y-6">
@@ -238,8 +238,8 @@ export default function Contact() {
                       <Phone className="w-6 h-6 text-[#0a1628]" />
                     </div>
                     <div>
-                      <h4 className="font-semibold mb-2">Landline</h4>
-                      <p className="text-slate-300 text-sm">011-45727781</p>
+                      <h4 className="font-semibold mb-1">Landline</h4>
+                      <a href="tel:01145727781" className="text-slate-300 text-sm hover:text-[#d4af37] transition-colors">011-45727781</a>
                     </div>
                   </div>
 
@@ -248,8 +248,20 @@ export default function Contact() {
                       <Mail className="w-6 h-6 text-[#0a1628]" />
                     </div>
                     <div>
-                      <h4 className="font-semibold mb-2">Email</h4>
-                      <p className="text-slate-300 text-sm break-all">apjurischambers@gmail.com</p>
+                      <h4 className="font-semibold mb-1">Email</h4>
+                      <a href="mailto:apjurischambers@gmail.com" className="text-slate-300 text-sm break-all hover:text-[#d4af37] transition-colors">apjurischambers@gmail.com</a>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 bg-[#d4af37] rounded-lg flex items-center justify-center flex-shrink-0">
+                      <MapPin className="w-6 h-6 text-[#0a1628]" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold mb-1">Address</h4>
+                      <p className="text-slate-300 text-sm leading-relaxed">
+                        213, Kailash Building, 26, K G Marg, New Delhi, India 110001
+                      </p>
                     </div>
                   </div>
 
@@ -258,14 +270,14 @@ export default function Contact() {
                       <Clock className="w-6 h-6 text-[#0a1628]" />
                     </div>
                     <div>
-                      <h4 className="font-semibold mb-2">Office Hours</h4>
-                      <p className="text-slate-300 text-sm">Monday - Saturday: 10:00 AM - 7:00 PM</p>
-                      <p className="text-slate-300 text-sm">Sunday: Closed</p>
+                      <h4 className="font-semibold mb-1">Office Hours (IST)</h4>
+                      <p className="text-slate-300 text-sm">Mon - Sat: 10:00 AM - 7:00 PM</p>
+                      <p className="text-slate-300 text-sm">Sun: Closed</p>
                     </div>
                   </div>
                 </div>
-              </div>
 
+              </div>
             </div>
           </div>
         </div>
@@ -275,11 +287,18 @@ export default function Contact() {
       {/* Map Placeholder */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-slate-200 rounded-lg overflow-hidden h-96 flex items-center justify-center shadow-lg">
-            <div className="text-center text-slate-600">
-              <MapPin className="w-16 h-16 mx-auto mb-4 text-[#d4af37]" />
-              <p className="text-lg font-medium">Interactive Map</p>
-              <p className="text-sm">213, KAILASH BUILDING, 26, K G MARG, NEW DELHI, DELHI, Delhi, India 110001</p>
+          <div className="bg-slate-200 rounded-lg overflow-hidden h-96 flex items-center justify-center shadow-lg relative">
+            <div className="text-center text-slate-600 p-6">
+              <MapPin className="w-16 h-16 mx-auto mb-4 text-[#d4af37] animate-bounce" />
+              <p className="text-xl font-bold text-[#0a1628] mb-2">Delhi Office Map Location</p>
+              <p className="text-sm max-w-lg mx-auto">
+                213, KAILASH BUILDING, 26, K G MARG, NEW DELHI, DELHI, Delhi, India 110001
+              </p>
+              <div className="mt-6">
+                <span className="px-4 py-2 bg-[#0a1628] text-white rounded text-xs font-semibold uppercase tracking-wider">
+                  Interactive View Pending Verification
+                </span>
+              </div>
             </div>
           </div>
         </div>
