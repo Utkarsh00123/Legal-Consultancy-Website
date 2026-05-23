@@ -91,18 +91,23 @@ export default function Home() {
   const testimonials = [
     {
       quote: "AP JURIS CHAMBERS provided exceptional cross-border legal support for our expansion into the UAE. Their expertise and professionalism were unmatched.",
-      author: "Rajesh Sharma",
-      role: "CEO, TechVenture India",
+      author: "ANIRUDH V SANKET",
+      role: "CEO, NOBSCI nutrition",
     },
     {
       quote: "The team's attention to detail and personalized service made a complex property transaction seamless. Highly recommended.",
-      author: "Priya Menon",
-      role: "Director, RealEstate Holdings",
+      author: "MAYUR M",
+      role: "CEO, RHINO CULT",
     },
     {
       quote: "Their corporate law expertise helped us navigate regulatory challenges with confidence. True partners in our business journey.",
-      author: "Ahmed Al-Mansouri",
-      role: "Managing Partner, Gulf Enterprises",
+      author: "IYENGAR PULIYOGARE",
+      role: "",
+    },
+    {
+      quote: "Strategic, responsive, and deeply knowledgeable. We consider them an integral part of our legal success.",
+      author: "NANDAN RAO",
+      role: "CEO, NEST VIBES",
     },
   ];
 

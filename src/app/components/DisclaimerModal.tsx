@@ -55,15 +55,7 @@ export default function DisclaimerModal() {
             <strong className="text-[#0a1628]">AP Juris Chambers</strong>, we serve clients across all major cities in India as well as internationally. AP Juris Chambers is recognised for its cutting-edge legal expertise and unwavering commitment to client needs, delivering bespoke, sustainable, and innovative legal solutions.
           </p>
 
-          <div className="bg-slate-50 p-6 rounded-lg border border-slate-100">
-            <h4 className="font-bold text-[#0a1628] mb-3 uppercase tracking-wider text-sm">What Our Clients Say</h4>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm font-semibold text-slate-600">
-              <div className="flex items-center justify-center p-3 bg-white rounded border border-slate-200 shadow-sm">NOBSCI</div>
-              <div className="flex items-center justify-center p-3 bg-white rounded border border-slate-200 shadow-sm">RHINO CULT</div>
-              <div className="flex items-center justify-center p-3 bg-white rounded border border-slate-200 shadow-sm text-center leading-tight">IYENGAR<br/>PULIYOGARE</div>
-              <div className="flex items-center justify-center p-3 bg-white rounded border border-slate-200 shadow-sm">NEST VIBES</div>
-            </div>
-          </div>
+
 
           <div>
             <h4 className="font-bold text-[#0a1628] mb-3 uppercase tracking-wider text-sm">Founder and Managing Partner</h4>
