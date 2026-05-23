@@ -368,23 +368,12 @@ export default function Layout() {
                         </button>
                         {isOpen && (
                           <div className="px-4 pb-4 border-t border-slate-200 pt-3 space-y-3 text-xs">
-                            <div className="flex justify-between items-center font-mono">
+                            <div className="flex justify-between items-center font-mono pb-2 border-b border-slate-100">
                               <span className="text-slate-500">Local Time:</span>
                               <span className="font-semibold text-[#0a1628]">{getLocalTime(reg.timezone)}</span>
                             </div>
-                            <div>
-                              <span className="font-bold text-amber-600 block mb-1">🔥 Key Focus Areas:</span>
-                              <ul className="list-disc list-inside space-y-1 text-slate-700">
-                                {reg.hotPreview.map((item, idx) => (
-                                  <li key={idx}>{item}</li>
-                                ))}
-                              </ul>
-                            </div>
-                            <div className="text-slate-600 leading-tight">
-                              <span className="font-bold text-[#0a1628] block mb-1">Address:</span>
-                              {reg.address}
-                            </div>
-                            <div className="flex gap-2 pt-2">
+                            
+                            <div className="flex gap-2 pt-1">
                               <a 
                                 href={`tel:${reg.phone.replace(/[^+\d]/g, '')}`} 
                                 className="flex-1 py-2 bg-white border border-slate-300 rounded text-center font-semibold text-[#0a1628] active:bg-slate-100"
