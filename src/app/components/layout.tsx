@@ -490,22 +490,12 @@ export default function Layout() {
 
             {/* Contact Info */}
             <div>
-              <h3 className="font-['Playfair_Display'] text-lg font-semibold mb-6 text-[#d4af37]">Our Offices</h3>
+              <h3 className="font-['Playfair_Display'] text-lg font-semibold mb-6 text-[#d4af37]">Our Office</h3>
               <ul className="space-y-4 text-sm text-slate-300">
                 <li>
                   <div className="font-medium text-white mb-0.5">🇮🇳 New Delhi (HQ)</div>
                   <div className="text-[12px] text-slate-400">213, Kailash Bldg, 26, K G Marg, New Delhi 110001</div>
                   <div className="text-[12px] text-slate-400">Ph: 011-45727781</div>
-                </li>
-                <li>
-                  <div className="font-medium text-white mb-0.5">🇦🇪 Dubai Office</div>
-                  <div className="text-[12px] text-slate-400">Level 15, The Gate District, DIFC, Dubai, UAE</div>
-                  <div className="text-[12px] text-slate-400">Ph: +971 4 321 0987</div>
-                </li>
-                <li>
-                  <div className="font-medium text-white mb-0.5">🇦🇪 Abu Dhabi Office</div>
-                  <div className="text-[12px] text-slate-400">Level 4, Al Sila Tower, ADGM, Al Maryah Island, Abu Dhabi</div>
-                  <div className="text-[12px] text-slate-400">Ph: +971 2 987 6543</div>
                 </li>
               </ul>
             </div>
