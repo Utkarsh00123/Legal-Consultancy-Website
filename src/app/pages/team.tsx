@@ -1,40 +1,8 @@
 import { Link } from "react-router";
-import { ChevronRight, Mail, Linkedin } from "lucide-react";
+import { ChevronRight } from "lucide-react";
+import { leadership } from "../data/team";
 
 export default function Team() {
-  const leadership = [
-    {
-      name: "Advocate Ayushi Chauhan",
-      role: "Founder & Managing Partner",
-      specialization: "Civil, Commercial, Arbitration, Criminal, Service, and Banking Laws",
-      education: "LL.B., Delhi University | Diploma in Corporate Laws & IR | Karnataka State Law University",
-      experience: "27+ years",
-      bar: "Supreme Court of India, High Courts, Tribunals/Commissions",
-      image: "/partner-1.jpg",
-      description:
-        "Ms. Ayushi Chauhan is a seasoned legal professional with wide experience practicing in the Supreme Court, High Courts, and Tribunals/Commissions. She brings a strong background in international legal matters, assisting companies in corporate, service, and criminal matters, formulating strategic legal solutions, and managing litigation across various courts worldwide.",
-    },
-    {
-      name: "Advocate Pankaj Kumar",
-      role: "Senior Partner",
-      specialization: "Corporate Law & Cross-Border Advisory",
-      education: "LL.M., National Law School of India University",
-      experience: "20+ years",
-      bar: "Supreme Court of India, Delhi High Court",
-      description:
-        "Pankaj brings extensive expertise in corporate law, navigating complex regulatory landscapes, and offering strategic legal counsel to domestic and international clients.",
-    },
-    {
-      name: "Advocate Arvind Patel",
-      role: "Partner",
-      specialization: "Corporate Law & International Transactions",
-      education: "LL.M., Harvard Law School | B.A., LL.B., National Law School of India University",
-      experience: "25+ years",
-      bar: "Supreme Court of India, Delhi High Court",
-      description:
-        "Arvind brings over two decades of experience in corporate law and international transactions. His expertise in India-UAE legal frameworks has been instrumental in establishing the firm's cross-border practice.",
-    },
-  ];
 
   return (
     <div>
@@ -72,76 +40,28 @@ export default function Team() {
             </p>
           </div>
 
-          <div className="space-y-12">
-            {leadership.map((member, index) => (
-              <div
-                key={index}
-                className="bg-slate-50 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border border-slate-200"
-              >
-                <div className="grid grid-cols-1 lg:grid-cols-3">
-                  {/* Photo Placeholder */}
-                  <div className="lg:col-span-1 bg-gradient-to-br from-[#0a1628] to-[#1a3a5c] flex items-center justify-center p-12">
-                    {'image' in member && member.image ? (
-                      <img 
-                        src={member.image as string} 
-                        alt={member.name} 
-                        className="w-48 h-48 rounded-full object-cover border-4 border-[#d4af37]"
-                      />
-                    ) : (
-                      <div className="w-48 h-48 rounded-full bg-slate-700/30 flex items-center justify-center border-4 border-[#d4af37]">
-                        <span className="text-6xl font-['Playfair_Display'] font-bold text-[#d4af37]">
-                          {member.name.split(" ").slice(-1)[0].charAt(0)}
-                        </span>
-                      </div>
-                    )}
-                  </div>
-
-                  {/* Details */}
-                  <div className="lg:col-span-2 p-10">
-                    <div className="mb-2">
-                      <span className="inline-block px-3 py-1 bg-[#d4af37]/10 text-[#d4af37] text-sm font-medium rounded">
-                        {member.role}
-                      </span>
-                    </div>
-                    <h3 className="font-['Playfair_Display'] text-3xl font-bold text-[#0a1628] mb-2">
-                      {member.name}
-                    </h3>
-                    <p className="text-[#d4af37] font-semibold mb-4">{member.specialization}</p>
-                    
-                    <p className="text-slate-700 leading-relaxed mb-6">
-                      {member.description}
-                    </p>
-
-                    <div className="space-y-3 text-sm text-slate-600 mb-6">
-                      <div>
-                        <span className="font-semibold text-[#0a1628]">Education:</span> {member.education}
-                      </div>
-                      <div>
-                        <span className="font-semibold text-[#0a1628]">Experience:</span> {member.experience}
-                      </div>
-                      <div>
-                        <span className="font-semibold text-[#0a1628]">Bar Admissions:</span> {member.bar}
-                      </div>
-                    </div>
-
-                    <div className="flex gap-4">
-                      <a
-                        href="#"
-                        className="inline-flex items-center gap-2 text-[#0a1628] hover:text-[#d4af37] transition-colors"
-                      >
-                        <Mail className="w-4 h-4" />
-                        <span className="text-sm">Contact</span>
-                      </a>
-                      <a
-                        href="#"
-                        className="inline-flex items-center gap-2 text-[#0a1628] hover:text-[#d4af37] transition-colors"
-                      >
-                        <Linkedin className="w-4 h-4" />
-                        <span className="text-sm">LinkedIn</span>
-                      </a>
-                    </div>
-                  </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 max-w-6xl mx-auto">
+            {leadership.map((member) => (
+              <div key={member.slug} className="flex flex-col items-center text-center group">
+                <div className="w-full aspect-[4/5] overflow-hidden mb-6 bg-slate-100">
+                  <img 
+                    src={member.image} 
+                    alt={member.name} 
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                  />
                 </div>
+                <h3 className="font-['Playfair_Display'] text-3xl font-bold text-[#0a1628] mb-2 group-hover:text-[#d4af37] transition-colors">
+                  {member.name.replace('Advocate ', '')}
+                </h3>
+                <p className="text-[#d4af37] font-semibold mb-6">
+                  {member.role}
+                </p>
+                <Link
+                  to={`/team/${member.slug}`}
+                  className="inline-flex items-center justify-center w-12 h-12 bg-[#0a1628] text-white hover:bg-[#d4af37] transition-colors"
+                >
+                  <ChevronRight className="w-6 h-6" />
+                </Link>
               </div>
             ))}
           </div>
