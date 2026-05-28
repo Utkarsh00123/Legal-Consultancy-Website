@@ -172,7 +172,7 @@ export default function Layout() {
                   return (
                     <div className="p-4 space-y-4">
                       {/* Local Time Header */}
-                      <div className="flex justify-between items-center text-sm border-b border-slate-100 pb-3">
+                      <div className="flex justify-between items-center text-sm">
                         <div className="flex items-center gap-2">
                           <span className="text-xl">{reg.flag}</span>
                           <span className="font-semibold">{reg.name}</span>
@@ -181,24 +181,6 @@ export default function Layout() {
                           <Clock className="w-4 h-4 text-[#d4af37]" />
                           <span className="font-mono font-medium">{getLocalTime(reg.timezone)}</span>
                         </div>
-                      </div>
-
-                      {/* Contact details */}
-                      <div className="flex gap-2">
-                        <a 
-                          href={`tel:${reg.phone.replace(/[^+\d]/g, '')}`} 
-                          className="flex-1 inline-flex items-center justify-center gap-1.5 px-3 py-2 bg-slate-100 hover:bg-[#d4af37]/10 hover:text-[#b8941f] text-slate-800 rounded font-semibold text-xs transition-colors"
-                        >
-                          <Phone className="w-3.5 h-3.5" />
-                          Call Us
-                        </a>
-                        <Link 
-                          to="/contact" 
-                          className="flex-1 inline-flex items-center justify-center gap-1.5 px-3 py-2 bg-[#0a1628] hover:bg-[#1a3a5c] text-white rounded font-semibold text-xs transition-colors"
-                        >
-                          <Mail className="w-3.5 h-3.5" />
-                          Email Us
-                        </Link>
                       </div>
                     </div>
                   );
@@ -366,25 +348,9 @@ export default function Layout() {
                         </button>
                         {isOpen && (
                           <div className="px-4 pb-4 border-t border-slate-200 pt-3 space-y-3 text-xs">
-                            <div className="flex justify-between items-center font-mono pb-2 border-b border-slate-100">
+                            <div className="flex justify-between items-center font-mono pb-1">
                               <span className="text-slate-500">Local Time:</span>
                               <span className="font-semibold text-[#0a1628]">{getLocalTime(reg.timezone)}</span>
-                            </div>
-                            
-                            <div className="flex gap-2 pt-1">
-                              <a 
-                                href={`tel:${reg.phone.replace(/[^+\d]/g, '')}`} 
-                                className="flex-1 py-2 bg-white border border-slate-300 rounded text-center font-semibold text-[#0a1628] active:bg-slate-100"
-                              >
-                                Call
-                              </a>
-                              <Link 
-                                to="/contact" 
-                                onClick={() => setIsMobileMenuOpen(false)}
-                                className="flex-1 py-2 bg-[#0a1628] flex items-center justify-center text-white rounded text-center font-semibold active:bg-[#1a3a5c]"
-                              >
-                                Email
-                              </Link>
                             </div>
                           </div>
                         )}

@@ -9,7 +9,7 @@ export const leadership = [
     bar: "Supreme Court of India, High Courts, Tribunals/Commissions",
     image: "/ayushi.png",
     description:
-      "Ms. Ayushi Chauhan is a seasoned legal professional with wide experience practicing in the Supreme Court, High Courts, and Tribunals/Commissions. She brings a strong background in international legal matters, assisting companies in corporate, service, and criminal matters, formulating strategic legal solutions, and managing litigation across various courts worldwide.",
+      "Ms. Ayushi Chauhan is a seasoned legal professional with wide experience practicing in the Supreme Court, High Courts, District Courts and Tribunals/Commissions across India. She brings a strong background in international legal matters, assisting companies in corporate, service, and criminal matters, formulating strategic legal solutions, and managing litigation across various courts worldwide.\n\nMs. Chauhan has successfully handled complex issues in trial, appellate, supervisory and writ jurisdictions, including commercial arbitrations.\n\nShe has been involved in various commercial and corporate transactions related to Investment Agreements, Entity Development Agreements, Founders and Shareholding Agreements, Director’s Exit Agreements, Security Services Agreements including E-surveillance for both PSU and private Banks and NBFCs, Software Acquisition and Development Agreements, etc.\n\nShe always thrives in dynamic environments and quickly adapts to the ever-changing demands of the legal field.",
   },
   {
     slug: "pankaj-kumar",
