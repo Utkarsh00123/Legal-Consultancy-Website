@@ -115,6 +115,11 @@ export default function Layout() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Scroll to top on route change
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
+
   const isActive = (path: string) => {
     if (path === "/") {
       return location.pathname === "/";
