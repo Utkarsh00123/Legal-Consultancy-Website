@@ -6,6 +6,7 @@ import About from "./pages/about";
 import Team from "./pages/team";
 import Member from "./pages/member";
 import Contact from "./pages/contact";
+import NotFound from "./pages/not-found";
 
 export const router = createBrowserRouter([
   {
@@ -18,6 +19,7 @@ export const router = createBrowserRouter([
       { path: "team", Component: Team },
       { path: "team/:slug", Component: Member },
       { path: "contact", Component: Contact },
+      { path: "*", Component: NotFound },
     ],
   },
 ]);
