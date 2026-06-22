@@ -8,7 +8,6 @@ import {
   Shield,
   Home as HomeIcon,
   ChevronRight,
-  Play,
   CheckCircle2,
   Users,
   Award,
@@ -172,34 +171,6 @@ export default function Home() {
             <p className="text-lg md:text-xl text-slate-700 leading-relaxed">
               <strong className="text-[#0a1628]">AP Juris Chambers</strong>, we serve clients across all major cities in India as well as internationally. AP Juris Chambers is recognised for its cutting-edge legal expertise and unwavering commitment to client needs, delivering bespoke, sustainable, and innovative legal solutions.
             </p>
-          </div>
-        </div>
-      </section>
-
-      {/* How We Work Video Section */}
-      <section className="py-20 bg-slate-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="font-['Playfair_Display'] text-4xl md:text-5xl font-bold text-[#0a1628] mb-4">
-              How We Work
-            </h2>
-            <p className="text-xl text-slate-600 max-w-2xl mx-auto">
-              Discover our approach to delivering exceptional legal services
-            </p>
-          </div>
-
-          <div className="max-w-4xl mx-auto">
-            <div className="relative aspect-video bg-gradient-to-br from-[#0a1628] to-[#1a3a5c] rounded-lg overflow-hidden shadow-2xl">
-              <div className="absolute inset-0 flex items-center justify-center">
-                <button className="group">
-                  <div className="w-20 h-20 bg-[#d4af37] rounded-full flex items-center justify-center shadow-xl transform group-hover:scale-110 transition-transform duration-300">
-                    <Play className="w-10 h-10 text-[#0a1628] ml-1" fill="currentColor" />
-                  </div>
-                </button>
-              </div>
-              <div className="absolute inset-0 bg-black/20"></div>
-            </div>
-            <p className="text-center text-slate-600 mt-4 italic">Click to watch our firm introduction video</p>
           </div>
         </div>
       </section>
