@@ -284,25 +284,7 @@ export default function Contact() {
       </section>
 
 
-      {/* Map Placeholder */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-slate-200 rounded-lg overflow-hidden h-96 flex items-center justify-center shadow-lg relative">
-            <div className="text-center text-slate-600 p-6">
-              <MapPin className="w-16 h-16 mx-auto mb-4 text-[#d4af37] animate-bounce" />
-              <p className="text-xl font-bold text-[#0a1628] mb-2">Delhi Office Map Location</p>
-              <p className="text-sm max-w-lg mx-auto">
-                213, KAILASH BUILDING, 26, K G MARG, NEW DELHI, DELHI, Delhi, India 110001
-              </p>
-              <div className="mt-6">
-                <span className="px-4 py-2 bg-[#0a1628] text-white rounded text-xs font-semibold uppercase tracking-wider">
-                  Interactive View Pending Verification
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+
     </div>
   );
 }
